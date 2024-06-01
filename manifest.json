@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "URL Shortener",
+    "version": "1.0",
+    "description": "Shorten URLs using Bitly",
+    "permissions": [
+      "tabs",
+      "https://api-ssl.bitly.com/*"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+  

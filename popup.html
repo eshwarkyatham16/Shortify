@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortify</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 500px;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 30px;
+      background-color: #ffffff;
+      width: 500px;
+    }
+    .btn-primary {
+      border-radius: 25px;
+    }
+    #shortenedUrl {
+      display: none;
+    }
+  </style>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Shortify</h1>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="urlInput" placeholder="Enter URL">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button" id="shortenBtn">Shorten</button>
+      </div>
+    </div>
+    <div id="shortenedUrl" class="text-center mt-3">
+    </div>
+  </div>
+</body>
+</html>
